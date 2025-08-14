@@ -1,7 +1,16 @@
+# DEMONS_FX_EA
 
-cd "C:\Path\To\MQL5\Experts"
-git init
-git remote add origin https://github.com/YourUserName/DEMONS_FX_EA.git
-git add DEMONS_FX_EA.mq5
-git commit -m "Initial commit - DEMONS FX EA"
-git push -u origin master
+MT5 Expert Advisor: EMA crossover + RSI filter + ATR SL/TP + Risk % position sizing
+
+## Files
+- MQL5/Experts/DEMONS_FX_EA.mq5  — main EA source
+
+## Quick start
+1. Open MT5 → File → Open Data Folder → MQL5/Experts
+2. Paste `DEMONS_FX_EA.mq5`
+3. Open MetaEditor → Compile (F7)
+4. Attach EA to chart and enable AutoTrading
+
+## Notes
+- For testing use Strategy Tester (Ctrl+R).
+- Keep `.ex5` out of repo (gitignored).
