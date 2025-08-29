@@ -1,0 +1,13 @@
+{
+  "name": "Exness Auto Reading/Trade Controller",
+  "description": "Heroku worker that relays signals, logging, and control for an Exness/MT5 bot running on a VPS.",
+  "env": {
+    "TELEGRAM_BOT_TOKEN": { "description": "Bot token from @BotFather" },
+    "TELEGRAM_CHAT_ID": { "description": "Receiver chat/group ID" },
+    "REMOTE_BOT_API": { "description": "HTTP endpoint of your VPS bot", "required": false },
+    "ADMIN_IDS": { "description": "Comma-separated Telegram user IDs allowed to control", "required": false }
+  },
+  "formation": { "worker": { "quantity": 1, "size": "basic" } },
+  "addons": [ "heroku-redis:hobby-dev" ],
+  "stack": "container"
+}
